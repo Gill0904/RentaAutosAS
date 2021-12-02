@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="544dp">
+
+                <EditText
+                    android:id="@+id/editNombreCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo"
+                    android:layout_toRightOf="@+id/txtModelo"
+                    android:autofillHints=""
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/editApepatCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editNombreCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo2"
+                    android:layout_toRightOf="@+id/txtModelo2"
+                    android:autofillHints=""
+                    android:hint="Apellido Paterno"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/editApematCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editApepatCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="-19dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo3"
+                    android:layout_toRightOf="@+id/txtModelo3"
+                    android:autofillHints=""
+                    android:hint="Apellido Materno"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/editTelefonoCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editApematCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="-21dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo4"
+                    android:layout_toRightOf="@+id/txtModelo4"
+                    android:autofillHints=""
+                    android:hint="Telefono"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/editDireccionCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTelefonoCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-19dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toEndOf="@+id/txtModelo5"
+                    android:layout_toRightOf="@+id/txtModelo5"
+                    android:autofillHints=""
+                    android:hint="Direccion"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <TextView
+                    android:id="@+id/txtModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="99dp"
+                    android:text="NOMBRE" />
+
+                <TextView
+                    android:id="@+id/txtModelo2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="52dp"
+                    android:text="APELLIDO PATERNO" />
+
+                <TextView
+                    android:id="@+id/txtModelo3"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="25dp"
+                    android:text="APELLIDO MATERNO" />
+
+                <TextView
+                    android:id="@+id/txtModelo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="24dp"
+                    android:text="TELEFONO" />
+
+                <TextView
+                    android:id="@+id/txtModelo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="59dp"
+                    android:text="DIRECCION" />
+
+                <TextView
+                    android:id="@+id/txtModelo6"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo5"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="36dp"
+                    android:text="CODIGO POSTAL" />
+
+                <Button
+                    android:id="@+id/btnComprar"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editCodigoPostalCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="139dp"
+                    android:layout_marginRight="139dp"
+                    android:layout_toEndOf="@+id/txtModelo6"
+                    android:layout_toRightOf="@+id/txtModelo6"
+                    android:text="Cotizar" />
+
+                <EditText
+                    android:id="@+id/editCodigoPostalCliente"
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editDireccionCliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/txtModelo6"
+                    android:layout_toRightOf="@+id/txtModelo6"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

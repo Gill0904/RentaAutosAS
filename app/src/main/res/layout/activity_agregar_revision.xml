@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/txtNumeroRevisionA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtMarca"
+                    android:layout_toRightOf="@+id/txtMarca"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:ignore="LabelFor"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtMatriculaA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNumeroRevisionA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="-31dp"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_marginRight="-12dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo"
+                    android:layout_toRightOf="@+id/txtModelo"
+                    android:autofillHints=""
+                    android:hint="Matricula"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtMarcaA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMatriculaA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_marginRight="-12dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo2"
+                    android:layout_toRightOf="@+id/txtModelo2"
+                    android:autofillHints=""
+                    android:hint="Marca"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtModeloA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMarcaA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-24dp"
+                    android:layout_marginEnd="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo3"
+                    android:layout_toRightOf="@+id/txtModelo3"
+                    android:autofillHints=""
+                    android:hint="Modelo"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtCambioAceiteA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModeloA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-21dp"
+                    android:layout_marginEnd="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo4"
+                    android:layout_toRightOf="@+id/txtModelo4"
+                    android:autofillHints=""
+                    android:hint="Cambio Aceite"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtCambioFiltroA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCambioAceiteA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="-21dp"
+                    android:layout_marginEnd="-18dp"
+                    android:layout_marginRight="-18dp"
+                    android:layout_toEndOf="@+id/txtModelo5"
+                    android:layout_toRightOf="@+id/txtModelo5"
+                    android:autofillHints=""
+                    android:hint="Cambio Filtro"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtCambioFrenosA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCambioFiltroA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="-3dp"
+                    android:layout_marginRight="-3dp"
+                    android:layout_toEndOf="@+id/txtModelo6"
+                    android:layout_toRightOf="@+id/txtModelo6"
+                    android:autofillHints=""
+                    android:hint="Cambio Frenos"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtComentariosA"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCambioFrenosA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_toEndOf="@+id/txtModelo8"
+                    android:layout_toRightOf="@+id/txtModelo8"
+                    android:autofillHints=""
+                    android:hint="Comentarios"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtEstadoRevisionA"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtComentariosA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toEndOf="@+id/txtModelo8"
+                    android:layout_toRightOf="@+id/txtModelo8"
+                    android:autofillHints=""
+                    android:hint="Estado Revision"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <TextView
+                    android:id="@+id/txtMarca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="43dp"
+                    android:text="NUMERO REVISION" />
+
+                <TextView
+                    android:id="@+id/txtModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="99dp"
+                    android:text="MATRICULA" />
+
+                <TextView
+                    android:id="@+id/txtModelo2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="52dp"
+                    android:text="MARCA" />
+
+                <TextView
+                    android:id="@+id/txtModelo3"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="46dp"
+                    android:text="MODELO" />
+
+                <TextView
+                    android:id="@+id/txtModelo4"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="50dp"
+                    android:text="CAMBIO ACEITE" />
+
+                <TextView
+                    android:id="@+id/txtModelo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="46dp"
+                    android:text="CAMBIO FILTRO" />
+
+                <TextView
+                    android:id="@+id/txtModelo6"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo5"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="36dp"
+                    android:text="CAMBIO FRENOS" />
+
+                <TextView
+                    android:id="@+id/txtModelo8"
+                    android:layout_width="110dp"
+                    android:layout_height="34dp"
+                    android:layout_below="@+id/txtModelo5"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="95dp"
+                    android:text="COMENTARIOS" />
+
+                <TextView
+                    android:id="@+id/txtModelo9"
+                    android:layout_width="79dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/txtModelo8"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="22dp"
+                    android:text="ESTADO REVISION" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnAgregarRevisionF"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="147dp"
+                android:layout_marginRight="147dp"
+                android:text="Agregar Revision" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

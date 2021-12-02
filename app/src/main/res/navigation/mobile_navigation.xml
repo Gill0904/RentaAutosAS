@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio">
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.proyectofinal.ui.Inicio.Inicio"
+        android:label="Inicio"
+        tools:layout="@layout/inicio_fragment" />
+    <fragment
+        android:id="@+id/catalogo"
+        android:name="com.example.proyectofinal.ui.Catalogo.Catalogo"
+        android:label="Catalogo"
+        tools:layout="@layout/catalogo_fragment" />
+    <fragment
+        android:id="@+id/revision"
+        android:name="com.example.proyectofinal.ui.Revision.Revision"
+        android:label="Revision"
+        tools:layout="@layout/revision_fragment" />
+    <fragment
+        android:id="@+id/usuarios"
+        android:name="com.example.proyectofinal.ui.Usuarios.Usuarios"
+        android:label="Usuario"
+        tools:layout="@layout/usuarios_fragment" />
+    <fragment
+        android:id="@+id/ventas"
+        android:name="com.example.proyectofinal.ui.Ventas.Ventas"
+        android:label="Ventas"
+        tools:layout="@layout/ventas_fragment" />
+</navigation>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/txtNombreUS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNumeroRevisionA"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo"
+                    android:layout_toRightOf="@+id/txtModelo"
+                    android:autofillHints=""
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <EditText
+                    android:id="@+id/txtRolUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-29dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toEndOf="@+id/txtModelo2"
+                    android:layout_toRightOf="@+id/txtModelo2"
+                    android:autofillHints=""
+                    android:hint="Rol"
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:layout_editor_absoluteX="122dp" />
+
+                <TextView
+                    android:id="@+id/txtModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="43dp"
+                    android:text="NOMBRE" />
+
+                <TextView
+                    android:id="@+id/txtModelo2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="52dp"
+                    android:text="ROL" />
+
+                <TextView
+                    android:id="@+id/txtModelo3"
+                    android:layout_width="106dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/txtModelo2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="47dp"
+                    android:text="CONTRASEÑA" />
+
+                <TextView
+                    android:id="@+id/txtModelo4"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="50dp"
+                    android:text="CONFIRMAR CONTRASEÑA" />
+
+                <EditText
+                    android:id="@+id/txtContrasena"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo3"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="-42dp"
+                    android:layout_toEndOf="@+id/txtModelo3"
+                    android:layout_toRightOf="@+id/txtModelo3"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/txtConfContrasena"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtContrasena"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_toEndOf="@+id/txtModelo4"
+                    android:layout_toRightOf="@+id/txtModelo4"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnAgregarUser"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="147dp"
+                android:layout_marginRight="147dp"
+                android:text="AGREGAR USUARIO" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

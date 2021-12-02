@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Informacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="213dp">
+
+                <ImageView
+                    android:id="@+id/imagenCoche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtMarca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtId"
+                    android:layout_marginStart="149dp"
+                    android:layout_marginLeft="149dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="154dp"
+                    android:layout_marginLeft="154dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/ID2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="MARCA" />
+
+                <TextView
+                    android:id="@+id/ID3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="MODELO" />
+
+
+                <TextView
+                    android:id="@+id/txtModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMarca"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_toEndOf="@+id/txtModelo7"
+                    android:layout_toRightOf="@+id/txtModelo7"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtPrecio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtColor"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/txtModelo10"
+                    android:layout_toRightOf="@+id/txtModelo10"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtModelo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="131dp"
+                    android:layout_marginLeft="131dp"
+                    android:layout_marginTop="126dp"
+                    android:text="COLOR" />
+
+                <TextView
+                    android:id="@+id/txtModelo10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo7"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="26dp"
+                    android:text="PRECIO" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

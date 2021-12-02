@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cotizacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenCoche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtMarca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtId"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/ID2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="MARCA" />
+
+                <TextView
+                    android:id="@+id/ID3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="MODELO" />
+
+                <TextView
+                    android:id="@+id/txtModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMarca"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@+id/imagenCoche"
+                    android:layout_toRightOf="@+id/imagenCoche"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtModelo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@+id/txtId"
+                    android:layout_toRightOf="@+id/txtId"
+                    android:text="Color" />
+
+                <Spinner
+                    android:id="@+id/sColor"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtModelo7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_toEndOf="@+id/txtMarca"
+                    android:layout_toRightOf="@+id/txtMarca" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp">
+
+                <TextView
+                    android:id="@+id/labelTotal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cbLed"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/imagenAcce"
+                    android:layout_toRightOf="@+id/imagenAcce"
+                    android:text="COSTO EXTRA" />
+
+                <TextView
+                    android:id="@+id/txtExtra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cbLed"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/labelTotal4"
+                    android:layout_toRightOf="@+id/labelTotal4"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imagenAcce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    tools:ignore="ContentDescription" />
+
+                <CheckBox
+                    android:id="@+id/cbSonido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/imagenAcce"
+                    android:layout_toRightOf="@+id/imagenAcce"
+                    android:text="EQUIPO DE SONIDO" />
+
+                <CheckBox
+                    android:id="@+id/cbasientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/cbSonido"
+                    android:layout_toRightOf="@+id/cbSonido"
+                    android:text="CUBRE ASIENTOS" />
+
+                <CheckBox
+                    android:id="@+id/cbRines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cbasientos"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/cbLed"
+                    android:layout_toRightOf="@+id/cbLed"
+                    android:text="RINES DEPORTIVOS" />
+
+                <CheckBox
+                    android:id="@+id/cbLed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cbSonido"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/imagenAcce"
+                    android:layout_toRightOf="@+id/imagenAcce"
+                    android:text="FOCOS LED" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="167dp">
+
+                <Spinner
+                    android:id="@+id/sPlazo"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_marginRight="110dp" />
+
+                <TextView
+                    android:id="@+id/labelTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginLeft="92dp"
+                    android:layout_marginTop="58dp"
+                    android:text="TOTAL" />
+
+                <TextView
+                    android:id="@+id/labelTotal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="19dp"
+                    android:text="PLAZO" />
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="143dp"
+                    android:layout_marginLeft="143dp"
+                    android:layout_marginTop="59dp"
+                    android:layout_toEndOf="@+id/labelTotal"
+                    android:layout_toRightOf="@+id/labelTotal"
+                    android:text="0"
+                    app:autoSizeTextType="uniform"
+                    app:drawableTint="#5C5AE8" />
+
+                <Button
+                    android:id="@+id/btnComprarCarro"
+                    android:layout_width="131dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/txtTotal"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="209dp"
+                    android:layout_marginLeft="209dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="71dp"
+                    android:layout_marginRight="71dp"
+                    android:text="Comprar" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

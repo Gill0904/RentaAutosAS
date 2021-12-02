@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_color">
+        <item>ROJO</item>
+        <item>AZUL</item>
+        <item>NEGRO</item>
+        <item>BLANCO</item>
+    </string-array>
+    <string-array name="combo_plazo">
+        <item>CONTADO</item>
+        <item>12 MESES</item>
+        <item>24 MESES</item>
+        <item>36 MESES</item>
+        <item>48 MESES</item>
+    </string-array>
+</resources>
